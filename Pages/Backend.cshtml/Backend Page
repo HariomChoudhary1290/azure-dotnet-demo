@@ -1,0 +1,97 @@
+@page
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backend Dashboard</title>
+
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 80px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        .status {
+            color: #4ade80;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .api {
+            margin-top: 20px;
+            color: #facc15;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🚀 Azure Backend Dashboard</h1>
+
+        <p>.NET 8 Backend Running Successfully</p>
+
+        <div class="status">
+            ✅ Server Status: ACTIVE
+        </div>
+
+        <div class="api">
+            API Endpoint:
+            /api/hello
+        </div>
+
+        <button onclick="showMessage()">
+            Test Backend
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+    function showMessage() {
+        alert("Backend Connected Successfully 🚀");
+    }
+</script>
+
+</body>
+</html>
