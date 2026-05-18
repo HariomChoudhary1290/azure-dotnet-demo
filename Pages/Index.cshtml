@@ -7,13 +7,19 @@
 <div class="hero-section text-center text-white d-flex align-items-center justify-content-center">
     <div>
         <h1 class="display-3 fw-bold mb-3">Azure Cloud DevOps Demo 🚀</h1>
+
         <p class="lead mb-4">
             ASP.NET Core application deployed on Azure App Service with GitHub Actions CI/CD.
         </p>
 
         <div class="d-flex justify-content-center gap-3 flex-wrap">
+
             <a class="btn btn-primary btn-lg px-4" href="/api/hello">
                 Test Backend API
+            </a>
+
+            <a class="btn btn-success btn-lg px-4" href="/backend">
+                Open Backend Dashboard
             </a>
 
             <a class="btn btn-outline-light btn-lg px-4"
@@ -21,38 +27,56 @@
                target="_blank">
                 View GitHub
             </a>
+
         </div>
 
         <div class="row mt-5 g-4 justify-content-center">
+
             <div class="col-md-3">
                 <div class="feature-card p-4 shadow-lg rounded-4">
                     <h3>Frontend</h3>
-                    <p>Responsive ASP.NET Razor UI with modern styling.</p>
+                    <p>
+                        Responsive ASP.NET Razor UI with modern cloud design.
+                    </p>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="feature-card p-4 shadow-lg rounded-4">
                     <h3>Backend API</h3>
-                    <p>Minimal API endpoint powered by .NET 8.</p>
+                    <p>
+                        Minimal API endpoint powered by ASP.NET Core .NET 8.
+                    </p>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="feature-card p-4 shadow-lg rounded-4">
-                    <h3>CI/CD</h3>
-                    <p>GitHub Actions integrated with Azure deployment.</p>
+                    <h3>CI/CD Pipeline</h3>
+                    <p>
+                        GitHub Actions automatically deploying to Azure Cloud.
+                    </p>
                 </div>
             </div>
+
         </div>
+
+        <div class="mt-5">
+            <p class="small text-light">
+                Cloud Hosted on Microsoft Azure ☁️
+            </p>
+        </div>
+
     </div>
 </div>
 
 <style>
+
     body {
         background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
         min-height: 100vh;
         color: white;
+        overflow-x: hidden;
     }
 
     .hero-section {
@@ -61,14 +85,14 @@
     }
 
     .feature-card {
-        background: rgba(255,255,255,0.1);
+        background: rgba(255,255,255,0.10);
         backdrop-filter: blur(10px);
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
         border: 1px solid rgba(255,255,255,0.2);
     }
 
     .feature-card:hover {
-        transform: translateY(-10px);
+        transform: translateY(-10px) scale(1.02);
     }
 
     .btn-primary {
@@ -79,4 +103,14 @@
     .btn-primary:hover {
         background-color: #1d4ed8;
     }
+
+    .btn-success {
+        background-color: #16a34a;
+        border: none;
+    }
+
+    .btn-success:hover {
+        background-color: #15803d;
+    }
+
 </style>
