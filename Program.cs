@@ -13,6 +13,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -20,5 +21,14 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+// Backend API Endpoint
+app.MapGet("/api/hello", () =>
+{
+    return Results.Json(new
+    {
+        message = "Hello from .NET Backend API"
+    });
+});
 
 app.Run();
