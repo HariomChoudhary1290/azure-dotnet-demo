@@ -23,12 +23,23 @@ app.UseAuthorization();
 // Frontend Razor Pages
 app.MapRazorPages();
 
-// Backend API Endpoint
+// Backend API - Hello Endpoint
 app.MapGet("/api/hello", () =>
 {
     return Results.Json(new
     {
         message = "Hello from .NET Backend API"
+    });
+});
+
+// Backend API - User Endpoint
+app.MapGet("/api/user", () =>
+{
+    return Results.Json(new
+    {
+        name = "Harry",
+        role = "DevOps Engineer",
+        cloud = "Azure"
     });
 });
 
