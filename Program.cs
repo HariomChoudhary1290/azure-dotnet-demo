@@ -20,6 +20,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Frontend Razor Pages
 app.MapRazorPages();
 
 // Backend API Endpoint
